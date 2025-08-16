@@ -1,0 +1,144 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  min-width: 300px;
+  padding: 20px;
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  color: #222;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(44, 62, 80, 0.08);
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1.6em;
+  text-align: center;
+  color: #2980b9;
+  letter-spacing: 1px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 18px;
+  cursor: pointer;
+  background: #f4f8fb;
+  padding: 10px 14px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
+}
+
+input[type="checkbox"] {
+  margin-right: 12px;
+  transform: scale(1.3);
+  accent-color: #3498db;
+  transition: accent-color 0.2s;
+}
+
+h3 {
+  margin-bottom: 10px;
+  font-weight: 500;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 7px;
+  color: #34495e;
+  letter-spacing: 0.5px;
+}
+
+#blockedList {
+  list-style: none;
+  padding-left: 0;
+  max-height: 140px;
+  overflow-y: auto;
+  margin-bottom: 12px;
+  border: 1px solid #d6eaff;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
+}
+
+#blockedList li {
+  padding: 8px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f0f4f8;
+  transition: background 0.2s;
+}
+#blockedList li:hover {
+  background: #f4f8fb;
+}
+
+#blockedList li:last-child {
+  border-bottom: none;
+}
+
+#blockedList button {
+  background: linear-gradient(90deg, #e74c3c 60%, #c0392b 100%);
+  border: none;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95em;
+  box-shadow: 0 1px 4px rgba(231, 76, 60, 0.08);
+  transition: background 0.2s, transform 0.2s;
+}
+#blockedList button:hover {
+  background: linear-gradient(90deg, #c0392b 60%, #e74c3c 100%);
+  transform: scale(1.08);
+}
+
+#newSite {
+  width: calc(100% - 100px);
+  padding: 8px 10px;
+  border: 1px solid #b2bec3;
+  border-radius: 6px;
+  margin-right: 8px;
+  font-size: 1em;
+  background: #f4f8fb;
+  transition: border 0.2s;
+}
+#newSite:focus {
+  border: 1.5px solid #3498db;
+  outline: none;
+}
+
+#addSiteBtn {
+  padding: 8px 18px;
+  font-size: 1em;
+  background: linear-gradient(90deg, #3498db 60%, #2980b9 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(52, 152, 219, 0.08);
+  transition: background 0.2s, transform 0.2s;
+}
+#addSiteBtn:hover {
+  background: linear-gradient(90deg, #2980b9 60%, #3498db 100%);
+  transform: scale(1.05);
+}
+
+footer {
+  margin-top: 18px;
+  font-size: 0.85em;
+  color: #888;
+  text-align: center;
+  letter-spacing: 0.5px;
+  opacity: 0.85;
+}
+
+.status-badge {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 4px 10px;
+  font-size: 0.75em;
+  background: #3498db;
+  color: white;
+  border-radius: 6px;
+  font-weight: 600;
+  vertical-align: middle;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
